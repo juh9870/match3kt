@@ -1,7 +1,7 @@
 description = "Serialization module"
 
 plugins {
-    kotlin("multiplatform")
+    id("scrapyard.mpp")
     id("io.kotest.multiplatform")
 }
 

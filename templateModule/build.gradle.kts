@@ -1,7 +1,7 @@
 description = "Module template"
 
 plugins {
-    kotlin("multiplatform")
+    id("scrapyard.mpp")
 }
 
 dependencies {

@@ -1,6 +1,6 @@
 description = "Lorem ipsum"
 plugins {
-    kotlin("multiplatform")
+    id("scrapyard.mpp")
 }
 
 val klockVersion: String by project

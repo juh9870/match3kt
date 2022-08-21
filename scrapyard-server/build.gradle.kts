@@ -1,7 +1,7 @@
 description = "Server part of the game"
 
 plugins {
-    kotlin("multiplatform")
+    id("scrapyard.mpp")
 }
 
 dependencies {

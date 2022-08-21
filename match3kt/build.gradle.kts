@@ -1,7 +1,7 @@
 description = "High-performance match-3 engine"
 
 plugins {
-    kotlin("multiplatform")
+    id("scrapyard.mpp")
 }
 
 val kdsVersion: String by project
