@@ -5,5 +5,4 @@ plugins {
 }
 
 dependencies {
-    add("commonTestImplementation", kotlin("test"))
 }

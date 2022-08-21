@@ -1,6 +1,23 @@
+
+val kotlinVersion:String by project
 plugins {
     `kotlin-dsl`
     id("org.jetbrains.kotlin.multiplatform") version "1.7.10" apply false
+}
+
+
+buildscript {
+    val kotestVersion: String by project
+    repositories {
+        mavenLocal()
+        gradlePluginPortal()
+        mavenCentral()
+        google()
+    }
+
+    dependencies {
+        classpath("io.kotest:kotest-framework-multiplatform-plugin-gradle:$kotestVersion")
+    }
 }
 
 repositories {
@@ -11,5 +28,5 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
 }
